@@ -712,9 +712,12 @@ html{
     #footer{
         width: 185%;
     }
-    #card{
+    .card{
         justify-content: center;
-        width: 500px;
-        margin-left: 45px;
+        width: auto;
+        margin-left: 10px;
      }
+     #mapouter {
+        width: auto;
+    }
 }
