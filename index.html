@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Yosef VinSweets Cake Shop </title>
+    <link rel="shortcut icon" type="image" href="./image/logo.png">
+    
+    
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/bootstrap.bundle.min.js" type="text/javascript" ></script> 
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+ 
+    <!-- NavBar show links -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- NavBar show links -->
+ 
+ 
+
+
+</head>
+ <body>
+ <div  id="firstContainer" class="container bg-white"  style="box-shadow: 0px 0px 5px 5px rgb(14, 203, 236);">
+    <!-- navigation tab  -->
+    <header>
+    <section class="navigation">
+      <nav class="navbar navbar-expand-md" id="navbar">
+        <!-- Brand -->
+        <a  href="index.html" class="navbar-brand" href="#" id="logo"  ><img src="./image/logo.png" alt="" width="50px">Yosef VinSweets Cake Shop</a>
+      
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span><img src="./image/menu.png" alt="" width="30px"></span>
+        </button>
+      
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar" style="text-align: center; justify-items: center; justify-content: center;">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            </li>
+            <!-- dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Products
+              </a>
+                <div class="dropdown-menu">
+                    <a href="#Scake1" class="dropdown-item">Specialty Cakes</a>
+                    <a href="#Pcake1"class="dropdown-item">Premium Cakes</a>
+                  
+                </div>
+            </li>
+            <!-- dropdown -->
+            <li class="nav-item"><a class="nav-link" href="#features1">Features</a></li>
+            <li class="nav-item"><a class="nav-link" href="#reviews1">Reviews</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact1">Contact Us</a></li>
+          </ul>
+        </div>
+
+   
+
+            <div class="icons">
+                <!-- Search -->
+                <img src="./image/Icon/search.png"  width="48px" data-bs-toggle="modal" data-bs-target="#search" >
+                <!-- modal -->
+                <div class="modal fade justify-content-center" id="search" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-fullscreen-sm">
+                    <div class="modal-content">
+
+                      <div class="modal-header ">
+                        <h3  class="modal-title"  style="text-align: center;"><h3>Search</h3></h3>
+                       
+                      </div>
+
+                      <div class="modal-body">
+                        <input type="text" class="form-control" id="search" placeholder="Please type here ..." name="search" required>
+                      </div>
+
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" >Search</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+
+               
+               
+              
+                <!-- Cart -->
+                <img src="./image/Icon/cart.png"  width="48px" data-bs-toggle="modal" data-bs-target="#cart" >
+
+                <!-- modal -->
+                <div class="modal fade" id="cart" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+
+                      <div class="modal-header" >
+                        <h3  class="modal-title"  style="text-align: center;"><h3>Your Cart</h3></h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+
+                      <div class="modal-body">
+                        <div class="table-responsive">
+                        <table class="table table-hover ">
+                          <thead>
+                            <tr>
+                              <th scope="col" colspan="2">Product Desciption</th>
+                              <th scope="col">Quantity</th>
+                              <th scope="col">Price</th>
+                              <th scope="col">Amount</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th >  <img src="./image/product/c2.png" ></th>
+                              <td> Mango Cream</td>
+                              <td style="text-align: center">x 1</td>
+                              <td style="text-align: center">7inch - Php. 500</td>
+                              <td style="text-align: right">Php. 500</td>
+                            </tr>
+
+                            <tr>
+                              <th >  <img src="./image/product/c3.png" ></th>
+                              <td> Ube Macapuno</td>
+                              <td style="text-align: center">x 1</td>
+                              <td style="text-align: center">9inch - Php. 900</td>
+                              <td style="text-align: right">Php. 900</td>
+                            </tr>
+
+                            <tr>
+                              <th >  <img src="./image/product/c6.png" ></th>
+                              <td> Choco Mousse Cake</td>
+                              <td style="text-align: center">x 1</td>
+                              <td style="text-align: center">9inch - Php. 1,200</td>
+                              <td style="text-align: right">Php. 1,200</td>
+                            </tr>
+
+                            <tr>
+                              <td colspan="4" style="text-align: right; background-color: rgb(163, 229, 255);">Sub Total :</td>
+                              <td style="text-align: right; background-color: rgb(163, 229, 255);;">Php. 2,600</td>
+                            </tr>
+
+                            <tr>
+                              <td colspan="4" style="text-align: right; background-color: rgb(176, 227, 247);">Delivery Fee :</td>
+                              <td style="text-align: right; background-color:  rgb(176, 227, 247);">Php. 0.00</td>
+                            </tr>
+
+                            <tr>
+                              <td colspan="4" style="text-align: right; background-color: rgb(127, 217, 253);">Total :</td>
+                              <td style="text-align: right; background-color: rgb(127, 217, 253);">Php. 2,600</td>
+                            </tr>
+                          </tbody>
+                        </table>
+
+                      </div>
+
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" >Check Out</button>
+                        <button type="button" class="btn btn-primary">Edit</button>
+                      </div>
+
+                    </div>
+                    </div>
+                  </div>
+                </div>
+
+             <!-- account -->
+
+             <img src="./image/Icon/account.png"  width="48px" data-bs-toggle="modal" data-bs-target="#account" >
+              <!-- modal -->
+
+                <div class="modal fade" id="account" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+
+                      <div class="modal-header" >
+                        <h5 class="modal-title" id="account"><img src="./image/logo.png"  width="95px"> Yosef VinSweets Cake Shop</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+
+                      <div class="modal-body">
+                      
+                        <div class="row  ">
+                          <div class="col">
+                            <form action="https://www.google.com/" target="_blank" method="get">
+                            <h3 class="h3 mt-3">Login</h3>
+                            <div class="container border-5">
+                        <div class="form-floating mb-3 mt-3">
+                          <input type="text" class="form-control" id="email" placeholder="Username or email address" name="email" required>
+                          <label for="email"> Email address</label>
+                        </div>
+
+                        <div class="form-floating mb-3 mt-3">
+                          <input type="password" class="form-control" id="pass" placeholder="pass " name="pass" required>
+                          <label for="pass"> Password</label>
+                        </div>
+                        <button type="submit"  class="btn btn-primary">Log In</button>
+                        <input type="checkbox" checked="false" class="form-check-input" id="Remember" name="Remember" value="Remember" checked> 
+                        <label class="form-check-label" for="Remember">Remember me</label>
+                        <div> <a href=""> Forget your password?</a></div>
+                      </form>
+                      </div>
+                
+                        </div>
+                      
+                    
+                        <div class="col" style="  border-left: 5px solid white  ;">
+                          <form action="https://www.google.com/" target="_blank" method="get">
+                          <h3 class="h3 mt-3">Register</h3>
+                        <div class="form-floating mb-3 mt-3">
+
+                          <div class="form-floating mb-3 mt-3">
+                            <input type="text" class="form-control" id="email" placeholder="Username or email address * " name="email" required>
+                            <label for="email"> Email address </label>
+                          </div>
+
+                          <p>A link to set a new password will be sent to your email address.</p>
+                          <p> Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our privacy policy.                          </p>
+                          <button type="submit"   class="btn btn-primary">Register</button>
+                        </form>
+                        </div>
+                      </div>
+                  </div>
+                 </div>
+
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+
+
+            </nav>
+        
+    </section>
+  </header>
+    <!-- navigation tab end -->
+   
+
+    <!-- home tab -->
+    
+    
+    <section id="home"  class="home" style="margin-top: 71px;" data-aos="flip-right" data-aos-duration="2500"     data-aos-easing="ease-out-cubic">
+
+    <div class="content"  style = "position:relative; left:80px; top:-240px;">
+      <h1> Celebrating Milestones, </h1>
+      <h3 class="h1">Creating Memories</h3>
+    
+      <a href="#Scake1" class="btn" data-aos="zoom-in-up" data-aos-duration="2500"     data-aos-easing="ease-out-cubic" ><h2>Order Now!</h2></a>
+  </div>
+
+</section>
+    <!-- home tab end -->
+ 
+    <!-- products tab -->
+    <div id="Scake1" style="margin-bottom: 100px;"></div>
+   
+    <section id="product-cards"  data-aos="fade-up" data-aos-duration="1500">
+      
+        <div class="container "   style="margin-bottom: 50px;" data-aos="fade-up" data-aos-duration="1500">
+            <h2>Our Products</h2>
+              <!-- specialty cakes -->
+   
+            <h5 id="Scake" class="h3" style="text-align: center;margin-top: 20px;margin-bottom: -40px;" data-aos="zoom-in" data-aos-duration="1500">Specialty Cakes</h5>
+            <div class="row " style="margin-top:50px;">
+               <div class="col-md-3 py-3 py-md-0" title="Made up Crushed Grahams and Bananas with Creamy and thick caramel syrup">
+                <div class="card">
+                    <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="Quick View"><i><img src="./image/views.png"  width="30px"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="./image/heart.png"  width="30px"></i></button>
+                    </div>
+                    <img id="prodID" src="./image/product/c1.png">
+                    <div class="card-body">
+                        <h3 >Banofee Pie</h3>
+              
+                            <div>
+                            <input type="radio" class="form-check-input" id="7in" name="Banopie" value="7in" checked> 
+                            <label class="form-check-label" for="7in"><p>7inch - Php. 500</p></label>
+                          </div>
+                            <input type="radio" class="form-check-input" id="9in" name="Banopie" value="9in">
+                            <label class="form-check-label" for="9in"><p>9inch - Php. 900</p></label>
+                            <div>
+                            <h6 style="margin-top: 5px;"> <span> <button>Add to Cart</button></span></h6>
+                          </div>
+                    </div>
+                </div>
+               </div>
+ 
+               <div class="col-md-3 py-3 py-md-0" title="Made up of soft and Fluppy Chiffon cake with creamy frosting and fresh mango toppings">
+                <div class="card">
+                    <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="Quick View"><i><img src="./image/views.png"  width="30px"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="./image/heart.png"  width="30px"></i></button>
+                    </div>
+                    <img id="prodID"  src="./image/product/c2.png">
+                    <div class="card-body">
+                        <h3 >Mango Cream Cake</h3>
+                       
+                        <div>
+                          <input type="radio" class="form-check-input" id="7inM" name="Mango" value="7in" checked> 
+                          <label class="form-check-label" for="7inM"><p>7inch - Php. 500</p></label>
+                        </div>
+                          <input type="radio" class="form-check-input" id="9inM" name="Mango" value="9in">
+                          <label class="form-check-label" for="9inM"><p>9inch - Php. 900</p></label>
+                          <div>
+                          <h6 style="margin-top: 5px;"> <span> <button>Add to Cart</button></span></h6>
+                        </div>
+
+                    </div>
+                </div>
+               </div>
+
+               <div class="col-md-3 py-3 py-md-0" title="Made up of soft and fluppy chiffon cake with Ube filling and Macapuno Topping">
+                <div class="card">
+                    <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="Quick View"><i><img src="./image/views.png"  width="30px"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="./image/heart.png"  width="30px"></i></button>
+                    </div>
+                    <img id="prodID" src="./image/product/c3.png">
+                    <div class="card-body">
+                        <h3 >Ube Macapuno</h3>
+                       
+                        <div>
+                          <input type="radio" class="form-check-input" id="7inUbe" name="Ube" value="7in" checked> 
+                          <label class="form-check-label" for="7inUbe"><p>7inch - Php. 500</p></label>
+                        </div>
+                          <input type="radio" class="form-check-input" id="9inUbe" name="Ube" value="9in">
+                          <label class="form-check-label" for="9inUbe"><p>9inch - Php. 900</p></label>
+                          <div>
+                          <h6 style="margin-top: 5px;"> <span> <button>Add to Cart</button></span></h6>
+                        </div>
+
+                    </div>
+                </div>
+               </div>
+          
+
+               <div class="col-md-3 py-3 py-md-0" title="Made up of melted classic cholocates with creamy frosting and fresh mango toppings">
+                <div class="card">
+                    <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="Quick View"><i><img src="./image/views.png"  width="30px"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="./image/heart.png"  width="30px"></i></button>
+                    </div>
+                    <img id="prodID"  src="./image/product/c4.png">
+                    <div class="card-body">
+                        <h3 >Mango Choco Cake</h3>
+                       
+                        <div>
+                          <input type="radio" class="form-check-input" id="7inMc" name="Mango_choco" value="7in" checked> 
+                          <label class="form-check-label" for="7inMc"><p>7inch - Php. 500</p></label>
+                        </div>
+                          <input type="radio" class="form-check-input" id="9inMc" name="Mango_choco" value="9in">
+                          <label class="form-check-label" for="9inMc"><p>9inch - Php. 900</p></label>
+                          <div>
+                          <h6 style="margin-top: 5px;"> <span> <button>Add to Cart</button></span></h6>
+                        </div>
+
+                    </div>
+                </div>
+               </div>
+
+
+
+
+     <!-- premium cakes -->
+     <div id="Pcake1" style="margin-bottom: 100px;"></div>
+     <h5 id="Pcake" class="h3" style="text-align: center;margin-top: 20px;" data-aos="zoom-in" data-aos-duration="1500">Premium Cakes</h5>
+     
+     <div class="col-md-3 py-3 py-md-0" title="Cream Cheese Frosting">
+      <div class="card">
+          <div class="overlay">
+              <button type="button" class="btn btn-secondary" title="Quick View"><i><img src="./image/views.png"  width="30px"></i></button>
+              <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="./image/heart.png"  width="30px"></i></button>
+          </div>
+          <img id="prodID" src="./image/product/c5.png">
+          <div class="card-body">
+              <h3 >Red Velvet Cake</h3>
+             
+              <div>
+                <input type="radio" class="form-check-input" id="7inred" name="Red" value="7in" checked> 
+                <label class="form-check-label" for="7inred"><p>7inch - Php. 700</p></label>
+              </div>
+                <input type="radio" class="form-check-input" id="9inred" name="Red" value="9in">
+                <label class="form-check-label" for="9inred"><p>9inch - Php. 1,200</p></label>
+                <div>
+                <h6 style="margin-top: 5px;"> <span> <button>Add to Cart</button></span></h6>
+              </div>
+
+          </div>
+      </div>
+     </div>
+
+
+     <div class="col-md-3 py-3 py-md-0" title="Made up of choco moist cake topped with creamy choco mousse and vanilla frosting">
+      <div class="card">
+          <div class="overlay">
+              <button type="button" class="btn btn-secondary" title="Quick View"><i><img src="./image/views.png"  width="30px"></i></button>
+              <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="./image/heart.png"  width="30px"></i></button>
+          </div>
+          <img id="prodID"  src="./image/product/c6.png">
+          <div class="card-body">
+              <h3 >Choco Mousse Cake</h3>
+             
+              <div>
+                <input type="radio" class="form-check-input" id="7inMousse" name="Mousse" value="7in" checked> 
+                <label class="form-check-label" for="7inMousse"><p>7inch - Php. 700</p></label>
+              </div>
+                <input type="radio" class="form-check-input" id="9inMouse" name="Mousse" value="9in">
+                <label class="form-check-label" for="9inMouse"><p>9inch - Php. 1,200</p></label>
+                <div>
+                <h6 style="margin-top: 5px;"> <span> <button>Add to Cart</button></span></h6>
+              </div>
+
+          </div>
+      </div>
+     </div>
+
+
+
+     <div class="col-md-3 py-3 py-md-0" title="Made up of soft and floppy strawberry chiffon cake with creamy strawberry frosting and fresh strawberry toppings">
+      <div class="card">
+          <div class="overlay">
+              <button type="button" class="btn btn-secondary" title="Quick View"><i><img src="./image/views.png"  width="30px"></i></button>
+              <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="./image/heart.png"  width="30px"></i></button>
+          </div>
+          <img id="prodID" src="./image/product/c7.png">
+          <div class="card-body">
+              <h3 >Strawberry  Cake</h3>
+             
+            
+              <div>
+                <input type="radio" class="form-check-input" id="7inSt" name="Strawberry" value="7in" checked> 
+                <label class="form-check-label" for="7inSt"><p>7inch - Php. 700</p></label>
+              </div>
+                <input type="radio" class="form-check-input" id="9inSt" name="Strawberry" value="9in">
+                <label class="form-check-label" for="9inSt"><p>9inch - Php. 1,200</p></label>
+                <div>
+                <h6 style="margin-top: 5px;"> <span> <button>Add to Cart</button></span></h6>
+              </div>
+
+
+          </div>
+      </div>
+     </div>
+
+
+     <div class="col-md-3 py-3 py-md-0" title="We personalize and design for any occasion">
+      <div class="card">
+          <div class="overlay">
+              <button type="button" class="btn btn-secondary" title="Quick View"><i><img src="./image/views.png"  width="30px"></i></button>
+              <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="./image/heart.png"  width="30px"></i></button>
+          </div>
+          <img id="prodID" src="./image/product/c8.png">
+          <div class="card-body">
+              <h3 >Customized Cake </h3>
+             
+              <div>
+            
+                <div>
+                  <input type="radio" class="form-check-input" id="7inCust" name="Creamy" value="7in" checked> 
+                  <label class="form-check-label" for="7inCust"><p>7inch - Php. 700</p></label>
+                </div>
+                  <input type="radio" class="form-check-input" id="9incust" name="Creamy" value="9in">
+                  <label class="form-check-label" for="9incust"><p>9inch - Php. 1,200</p></label>
+                  <div>
+                  <h6 style="margin-top: 5px;"> <span> <button>Add to Cart</button></span></h6>
+                </div>
+  
+
+          </div>
+      </div>
+     </div>
+
+
+          
+        </div>
+        <nav aria-label="Page navigation ">
+          <ul class="pagination mt-3 justify-content-center">
+            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+          </ul>
+        </nav>
+
+      </section>
+
+   <!-- features tab -->
+   <div id="features1" style="margin-bottom: 150px;"></div>
+   <section  id="features"  class="features bg-gradient " data-aos="fade-up" data-aos-duration="1500">
+    <h2 >Our Features</h2>
+      
+      <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="5" aria-label="Slide 6"></button>
+          <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="6" aria-label="Slide 7"></button>
+          <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="7" aria-label="Slide 8"></button>
+
+        </div>
+
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <img src="./image/features/f1.jpg" class="d-block w-100" >
+            <div class="carousel-caption d-none d-md-block" >
+            <a class="btn" id="btnfeature" ><h3 id="btnfeature" >Add to Cart</h3></a>
+            </div>
+          </div>
+
+          
+          <div class="carousel-item">
+            <img src="./image/features/f2.jpg" class="d-block w-100" >
+            <div class="carousel-caption d-none d-md-block">
+            <a class="btn" ><h3  >Add to Cart</h3></a>
+            </div>
+          </div>
+
+                 
+          <div class="carousel-item">
+            <img src="./image/features/f3.jpg" class="d-block w-100" >
+            <div class="carousel-caption d-none d-md-block">
+            <a class="btn" ><h3  >Add to Cart</h3></a>
+            </div>
+          </div>
+
+                 
+          <div class="carousel-item">
+            <img src="./image/features/f4.jpg" class="d-block w-100" >
+            <div class="carousel-caption d-none d-md-block">
+            <a class="btn" ><h3  >Add to Cart</h3></a>
+            </div>
+          </div>
+
+                 
+          <div class="carousel-item">
+            <img src="./image/features/f5.jpg" class="d-block w-100" >
+            <div class="carousel-caption d-none d-md-block">
+            <a class="btn" ><h3  >Add to Cart</h3></a>
+            </div>
+          </div>
+
+                 
+          <div class="carousel-item">
+            <img src="./image/features/f6.jpg" class="d-block w-100" >
+            <div class="carousel-caption d-none d-md-block">
+            <a class="btn" ><h3  >Add to Cart</h3></a>
+            </div>
+          </div>
+
+                 
+          <div class="carousel-item">
+            <img src="./image/features/f7.jpg" class="d-block w-100" >
+            <div class="carousel-caption d-none d-md-block">
+            <a class="btn" ><h3  >Add to Cart</h3></a>
+            </div>
+          </div>
+
+                 
+          <div class="carousel-item">
+            <img src="./image/features/f8.jpg" class="d-block w-100" >
+            <div class="carousel-caption d-none d-md-block">
+            <a class="btn" ><h3  >Add to Cart</h3></a>
+            </div>
+          </div>
+
+          
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+
+      </div>
+
+    </section>
+
+    <!-- reviews tab -->
+    <div id="reviews1" style="margin-bottom: 100px;"></div>
+    <section class="reviews " id="reviews" data-aos="fade-up" data-aos-duration="1500">
+      <h2 >Reviews</h2>
+
+      <div class="container">
+          
+        <div class="row mt-4">
+          <div id="reviewshow" class="col text-end">
+            <img src="./image/review/r1.JPG" class="d-block w-100" data-aos="fade-right" data-aos-duration="1500"     data-aos-easing="ease-out-cubic" >
+          </div>              
+          <div id="reviewhide" class="col"><img src="./image/review/rstar.png" class="d-block w-100" ></div>
+         </div>
+
+         <div class="row">
+          <div id="reviewshow" class="col order-last">
+            <img src="./image/review/r2.JPG" class="d-block w-100" data-aos="fade-left" data-aos-duration="1500"     data-aos-easing="ease-out-cubic" >
+         
+          </div>
+          <div id="reviewhide"  class="col"><img src="./image/review/rstar.png" class="d-block w-100" ></div>
+         </div>
+
+         <div   class="row">
+          <div id="reviewshow" class="col text-end">
+            <img src="./image/review/r3.JPG" class="d-block w-100" data-aos="fade-right" data-aos-duration="1500"     data-aos-easing="ease-out-cubic">
+
+          </div>
+          <div id="reviewhide" class="col"><img src="./image/review/rstar.png" class="d-block w-100" ></div>
+         </div>
+
+         <div class="row">
+          <div id="reviewshow" class="col order-last">
+            <img src="./image/review/r4.JPG" class="d-block w-100" data-aos="fade-left" data-aos-duration="1500"     data-aos-easing="ease-out-cubic" >
+          </div>
+          <div id="reviewhide"  class="col"><img src="./image/review/rstar.png" class="d-block w-100" ></div>
+         </div>
+
+         
+        </div>
+
+    
+ 
+      </section>
+      
+
+
+  
+
+    <!-- reviews tab -->
+    <div id="contact1" style="margin-bottom: 100px;"></div>
+
+    <!-- Contact -->
+    <section class="contact" id="contact" data-aos="fade-up" data-aos-duration="1500">
+          <h2 >Contact Us</h2>
+          <div class="container mb-5">
+
+            <div class="row ">
+              <div class="col mt-3" >
+      
+                <div id="FAQ1" class="container border-5">
+
+                  <h3> Need Some Assistance? </h3>
+                    <p>Check our FAQs for more detailed information regarding orders, payment, shipping and deliveries.</p>
+      
+
+               <!-- Accordion -->
+
+            <div class="accordion " id="accordionExample">
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingone">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseone" aria-expanded="false" aria-controls="collapseone">
+                    How safe is it to order online?
+                  </button>
+                </h2>
+                <div id="collapseone" class="accordion-collapse collapse" aria-labelledby="headingone" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    We take the utmost care with the information that you provide us when placing an order on our website.  Information is encrypted using the internet-standard SSL (Secure Sockets Layer) protocol.
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingfour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+                  What are the payment options?
+                </button>
+              </h2>
+              <div id="collapsefour" class="accordion-collapse collapse" aria-labelledby="headingfour" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  We accept bank deposit through BDO or online transfers, GCash and PayPal.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  Do you have an ordering lead time?
+                </button>
+              </h2>
+              <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Ordering lead time is three (3) working days.  You may still order for future dates (up to 3 months ahead).
+                </div>
+              </div>
+            </div>
+  
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        How will I know that an order is received?
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        You will receive a receipt with your order details and an order number. Please check your spam folder if you did not receive an email from us.  You can also check the status of your order by logging into your account.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        How do I order a gift for someone?
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        Add to the cart the gift item you want to send.  Proceed to checkout. Enter the name and shipping address you wish to send the gift item to.  Include personalized gift messages or instructions in the text box.  The client is responsible to arrange for a gift item to be received by someone on the delivery date.
+      </div>
+    </div>
+  </div>
+
+
+ <!-- Accordion -->      
+          
+ </div>
+    
+ </div>
+
+        
+            <div class="col" >
+              <img id="faq" src="./image/Icon/faq.png" data-aos="flip-left" data-aos-duration="1500"     data-aos-easing="ease-out-cubic"></a>
+            </div>
+          </div>
+      </div>
+    
+      <div class="row mt-2 ">
+
+        <div class="col text-center" >
+
+          <div class="container border-5" data-aos="zoom-out" data-aos-duration="1500"     data-aos-easing="ease-out-cubic">
+
+           <div class="h5" > WE ARE LOCATED AT </div>
+           <div>  482 Arterial Road Subdivision Street Balubad</div>
+           <div> Bulakan, Bulacan</div>
+
+            <div class="h5 mt-4" >  REACH OUT TO US </div>
+            <div> 0965 302 0987 | 0926 472 0494</div>
+            <div> marjoriedionisiocruz@yahoo.com</div>
+
+            <div class="h5 mt-4" >  DELIVERY HOURS </div>
+            <div>  Mondays to Sundays </div>
+            <div>9:00am to 6:00pm</div>
+
+            </div>
+            </div>
+       
+
+            <div class="col ">
+
+          <div class="container border-5">
+
+          <div class="mapouter"><div class="gmap_canvas"><iframe width="542" height="356" id="gmap_canvas" src="https://maps.google.com/maps?q=Yosef%20VinSweets%20482%20Arterial%20Rd,%20Bulakan,%20Bulacan&t=k&z=19&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://fmovies-online.net">fmovies</a><br><style>.mapouter{position:relative;text-align:right;height:356px;width:542px;}</style><a href="https://www.embedgooglemap.net">how to copy and paste google maps</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:356px;width:542px;}</style></div></div>
+         
+          </div>
+        </div>
+
+        
+
+
+        </div>
+
+        <div class="row mt-3   " >
+
+          <div class="col mb-2 " id="sub" >
+         
+          <div class="container mt-4" id="contactMessage"   >
+            <h3>You Can Also Send Us A Message Here:</h3>
+            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-xl-4 g-4  mt-2 mb-4 pb-2 ">
+                <div class="col-md-4 py-1 py-md-0">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="usr" placeholder="Name">
+                    </div>
+                </div>
+                <div class="col-md-4 py-1 py-md-0">
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="eml" placeholder="Email">
+                    </div>
+                </div>
+                <div class="col-md-4 py-1 py-md-0">
+                    <div class="form-group">
+                        <input type="number" class="form-control" id="phn" placeholder="Phone">
+                    </div>
+                </div>
+                
+            </div>
+            <div class="form-group mt-2">
+                <textarea class="form-control" rows="5" id="comment" placeholder="Message"></textarea>
+            </div>
+            <button type="button" class="btn btn-primary  mt-2 " >Submit</button>
+          </div>
+
+         
+         </div>
+         
+          <div class="col text-center" id="gif">
+         
+      
+          <img src="./image/Icon/giphy.gif" height="350px" ></a>
+         </div>
+      
+
+         </div>
+
+
+      </div>
+    </section>
+
+      <!-- Contact End -->
+
+      <!-- Footer -->
+
+
+
+   
+      <footer id="footer"    data-aos="fade-up"
+      data-aos-duration="1500">
+        <div><h2 class="text-center">Yosef VinSweets Cake Shop </h2> </div>
+        
+        <p class="text-center">Yosef VinSweets is an online bakeshop in Bulacan specializing in custom , specialty and premium cakes. We personalize and design for any occasion.</p>
+        <div class="icons text-center">
+          FOLLOW US :
+          <img src="./image/footer/insta.png"  width="48px" title="Instagram"  >
+          <a href="https://www.facebook.com/yosefvinsweets" target="_blank"><img src="./image/footer/fb.png"   width="48px" title="Facebook"></a>
+          <img src="./image/footer/twitter.png"  width="48px" title="Twitter" >
+        </div>
+        <div class="copyright text-center">
+           
+
+            <strong>Yosef VinSweets Cake Shop </strong> © All Rights Reserved.2022
+        </div>
+        <div class="credite text-center">
+            Designed By <span>Maki Sakay</span>
+        </div>
+      </footer>
+      
+
+   
+
+
+ </div>
+ <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ <script>
+     AOS.init();
+   </script>
+ </body>
+</html>
